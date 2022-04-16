@@ -41,13 +41,22 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1463px;
+    width: 1550px;
 }
 
 nav > ul{
     width: 734px;
     display: flex;
     justify-content: space-evenly;
+}
+
+.déroulant > li ::after{
+    content: "v";
+    margin-left: 6px;
+}
+
+.déroulant > li + li + li + li + li  ::after{
+    display: none;
 }
 
 nav > ul + ul{
@@ -66,9 +75,11 @@ li > a{
 
 .presentation{
     display: flex;
+    height: 756px;
     background-color: #171717;
     color: white;
     padding-left: 262px;
+    overflow: hidden;
 }
 
 .presentation ul {
@@ -89,7 +100,7 @@ p{
     font-size: 20px;
 }
 
-.presentation div > p{
+.presentation > div > p{
     width: 552px;
     margin-bottom: 61px;
     line-height: 35px;
@@ -102,12 +113,120 @@ p{
     width: 300px;
 }
 
+.iphone > img{
+    margin-top: -20px;
+    margin-left: 30px;
+}
+
 
 .iphone > img + img{
     width: 865px;
     height: 985px;
+    margin-top: -500px;
+    margin-left: -250px;
 }
 
+.presentation ~ section{
+    width: 1400px;
+    color: #002262;
+    margin: auto;
+}
 
+.liste-acteurs{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+h2{
+    font-size: 55px;
+    font-weight: 100;
+}
 
+figure
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	width: 452px;
+    padding-bottom: 3px;
+    margin: 0px 7px 100px 7px;
+}
+
+figure > img
+{
+	width: 452px;
+	height: 303px;
+	object-fit: cover;
+	margin: auto;
+}
+
+figcaption
+{
+	margin-top: 63px;
+}
+
+figcaption p {
+    width: 380px;
+    height: 70px;
+    margin: 0;
+    font-size: 26px;
+}
+
+span{
+    font-weight: bold;
+}
+
+footer{
+    background-color: #171717;
+    height: 780px;
+}
+
+footer img{
+    width: 83px;
+    margin-left: 120px;
+}
+
+.liens{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 170px;
+}
+
+.nav-footer{
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.nav-footer ol > li > a{
+    color: #707070;
+    line-height: 35px;
+}
+
+h3{
+    color: white;
+    font-size: 24px;
+}
+
+ol{
+    list-style-type: none;
+    padding: 0;
+}
+
+.mentions-reseaux{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1640px;
+    margin: auto;
+    padding-top: 90px;
+}
+
+.mentions-reseaux ol{
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+}
+
+.reseaux{
+    color: white;
+}
