@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'usual';
+	src: url('static/usual-light.otf') format("opentype");
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'opensans';
+	src: url('static/opensans-light.ttf');
+	font-style: normal;
+}
+
+header, .presentation, footer{
+    font-family: 'usual';
+}
+
+.presentation ~ section{
+    font-family: 'opensans';
+}
+
+body{
+    max-width: 1920px;
+    margin: 0;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+}
+
+header{
+    background-color: #171717;
+}
+
+header > div{
+    display:flex;
+    width: 1787px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1463px;
+}
+
+nav > ul{
+    width: 734px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav > ul + ul{
+    width: 350px;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+}
+
+li > a{
+    color: white;
+    font-size: 16px;
+}
+
+.presentation{
+    display: flex;
+    background-color: #171717;
+    color: white;
+    padding-left: 262px;
+}
+
+.presentation ul {
+    display: flex;
+    justify-content: space-between;
+    width: 366px;
+    padding-top: 154px;
+    padding-left: 0;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin: 41px 0px;
+}
+
+p{
+    font-size: 20px;
+}
+
+.presentation div > p{
+    width: 552px;
+    margin-bottom: 61px;
+    line-height: 35px;
+}
+
+.reseaux{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+
+.iphone > img + img{
+    width: 865px;
+    height: 985px;
+}
+
+
+
+
